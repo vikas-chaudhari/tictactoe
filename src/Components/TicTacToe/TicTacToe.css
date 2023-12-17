@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(189, 204, 218);
+  color: aquamarine;
+}
+.title img {
+  margin-top: 5px;
+  height: 50px;
+}
+.title span {
+  color: rgb(177, 177, 0);
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 350px;
+  /* border: 2px solid green; */
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.row3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  width: 85px;
+  margin: 2px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  color: aliceblue;
+  transition: all;
+  transition-duration: 0.3s;
+}
+.boxes:hover {
+  cursor: url("../Assets/pencil.png"), auto;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.boxes img {
+  height: 80%;
+  width: 80%;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 120px;
+  font-size: 20px;
+  color: aquamarine;
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: rgba(46, 46, 46, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  /* border: 2px solid aquamarine; */
+}
+button:hover {
+  transform: scale(1.1);
+  border: 1px solid aquamarine;
+}
