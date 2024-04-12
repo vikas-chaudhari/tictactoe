@@ -76,18 +76,18 @@ const TicTacToe = () => {
     setLock(true);
   };
 
-  // let flag = 1;
+  let flag = 1;
 
-  // for (let i = 0; i < 9; i++) {
-  //   flag = 0;
-  //   if (data[i] === "") {
-  //     flag = 1;
-  //     break;
-  //   }
-  // }
-  // if (flag == 0) {
-  //   titleRef.current.innerHTML = "<span>Draw<span>";
-  // }
+  for (let i = 0; i < 9; i++) {
+    flag = 0;
+    if (data[i] === "") {
+      flag = 1;
+      break;
+    }
+  }
+  if (flag === 0) {
+    titleRef.current.innerHTML = "<span>Draw<span>";
+  }
 
   let clearBoard = (e) => {
     data = ["", "", "", "", "", "", "", "", ""];
